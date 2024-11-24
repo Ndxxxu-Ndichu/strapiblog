@@ -31,9 +31,6 @@
     },
     "author": {
       "type": "string"
-    },
-    "blog_date": {
-      "type": "datetime"
     }
   }
 }

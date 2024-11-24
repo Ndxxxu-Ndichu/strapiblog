@@ -383,7 +383,6 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
   attributes: {
     author: Schema.Attribute.String;
     blog_content: Schema.Attribute.Text;
-    blog_date: Schema.Attribute.DateTime;
     blog_image: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
