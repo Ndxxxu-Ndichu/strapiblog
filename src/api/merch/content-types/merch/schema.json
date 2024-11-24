@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "merches",
+  "info": {
+    "singularName": "merch",
+    "pluralName": "merches",
+    "displayName": "merch"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "merch": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
