@@ -403,6 +403,7 @@ export interface ApiBlogBlog extends Struct.CollectionTypeSchema {
 export interface ApiMerchMerch extends Struct.CollectionTypeSchema {
   collectionName: 'merches';
   info: {
+    description: '';
     displayName: 'merch';
     pluralName: 'merches';
     singularName: 'merch';
@@ -421,6 +422,8 @@ export interface ApiMerchMerch extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    merch_name: Schema.Attribute.String;
+    merch_price: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
